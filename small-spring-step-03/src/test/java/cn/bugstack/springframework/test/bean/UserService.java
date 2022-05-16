@@ -7,7 +7,7 @@ package cn.bugstack.springframework.test.bean;
  */
 public class UserService {
 
-    private String name;
+    private String name = "默认名字";
 
     public UserService() {
     }
@@ -20,10 +20,4 @@ public class UserService {
         System.out.println("查询用户信息：" + name);
     }
 
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("");
-        sb.append("").append(name);
-        return sb.toString();
-    }
 }

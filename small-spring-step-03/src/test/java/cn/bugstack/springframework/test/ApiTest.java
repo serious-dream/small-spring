@@ -50,6 +50,7 @@ public class ApiTest {
     public void test_newInstance() throws IllegalAccessException, InstantiationException {
         UserService userService = UserService.class.newInstance();
         System.out.println(userService);
+        userService.queryUserInfo();
     }
 
     @Test
